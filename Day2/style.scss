@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+*{
+    font-family: "Poppins", sans-serif;
+    padding:0;margin:0;
+    outline: none;border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2 linear;
+}
+
+$pink-color:#f2726a;
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+
+    &::-webkit-scrollbar{
+        width: 1rem;
+    }
+
+    &::-webkit-scrollbar-track{
+        background-color:#fff;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        color:$pink-color;
+        border-radius: 1rem;
+    }
+}
+
+body{
+    background: linear-gradient(45deg, #00853e, #50c878);
+    height:100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap:1.5rem;
+  }
+
+.card{
+    background-color: #242628;
+    width:30rem;
+    height:40rem;
+    text-align:center;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin:0 3rem;
+
+    .card-image{
+        width:12rem;
+        height:12rem;
+        border-radius: 50%;
+        margin:2.4rem auto 1.6rem;
+        border:.4rem solid $pink-color;
+        cursor: pointer;
+        transition:.5s;
+
+        img{
+            width:100%;
+            height:100%;
+            object-fit: center;
+            object-position: center;
+            border-radius:50%;
+            transition: .5s;
+        }
+
+        &:hover{
+            width:100%;
+            height:100%;
+            border:none;
+            margin-top:0;
+
+            img{
+                border-radius: 1rem;
+            }
+        }
+        
+    }
+
+    h1{
+        color:#fff;
+        font-size:2.4rem;
+    }
+
+    h3{
+        color: $pink-color;
+        font-size:1.6rem;
+        font-weight: 400;
+    }
+
+    .card-inform{
+
+        margin:3rem 0 3.2rem;
+
+        a{
+            color:#fff;
+            font-size: 1.8rem;
+            padding:0 2rem;
+            transition:.5s;
+
+            &:hover{
+                color: $pink-color;
+            }
+        }
+    }
+
+    .card-btn{
+        padding:1rem 2rem;
+        border-radius:1rem;
+        color:#fff;
+        border:1px solid $pink-color;
+        background-color: #242628;
+        transition:.5s;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $pink-color;
+            transform: scale(.9);
+        }
+    }
+
+}
+
+
+

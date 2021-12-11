@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2 linear; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem; }
+  html::-webkit-scrollbar {
+    width: 1rem; }
+  html::-webkit-scrollbar-track {
+    background-color: #fff; }
+  html::-webkit-scrollbar-thumb {
+    color: #f2726a;
+    border-radius: 1rem; }
+
+body {
+  background: linear-gradient(45deg, #00853e, #50c878);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.card {
+  background-color: #242628;
+  width: 30rem;
+  height: 40rem;
+  text-align: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 0 3rem; }
+  .card .card-image {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    margin: 2.4rem auto 1.6rem;
+    border: 0.4rem solid #f2726a;
+    cursor: pointer;
+    transition: .5s; }
+    .card .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: center;
+      object-position: center;
+      border-radius: 50%;
+      transition: .5s; }
+    .card .card-image:hover {
+      width: 100%;
+      height: 100%;
+      border: none;
+      margin-top: 0; }
+      .card .card-image:hover img {
+        border-radius: 1rem; }
+  .card h1 {
+    color: #fff;
+    font-size: 2.4rem; }
+  .card h3 {
+    color: #f2726a;
+    font-size: 1.6rem;
+    font-weight: 400; }
+  .card .card-inform {
+    margin: 3rem 0 3.2rem; }
+    .card .card-inform a {
+      color: #fff;
+      font-size: 1.8rem;
+      padding: 0 2rem;
+      transition: .5s; }
+      .card .card-inform a:hover {
+        color: #f2726a; }
+  .card .card-btn {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: #fff;
+    border: 1px solid #f2726a;
+    background-color: #242628;
+    transition: .5s;
+    cursor: pointer; }
+    .card .card-btn:hover {
+      background-color: #f2726a;
+      transform: scale(0.9); }

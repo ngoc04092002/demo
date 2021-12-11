@@ -1,0 +1,100 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  transition: all .5s linear; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+  font-size: 62.5%; }
+  html::-webkit-scrollbar {
+    width: 1rem; }
+  html::-webkit-scrollbar-track {
+    background-color: #fff; }
+  html::-webkit-scrollbar-thumb {
+    color: #e26e70;
+    border-radius: 1ren; }
+
+body {
+  background-image: linear-gradient(45deg, #4158d0 0%, #c850c0 50%, #ffcc70 100%);
+  height: 100vh; }
+
+.modal {
+  font-size: 2rem;
+  padding: 1.6rem 3rem;
+  background: #fff;
+  border-radius: .5rem;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  cursor: pointer; }
+  .modal:hover {
+    background-color: rgba(255, 255, 255, 0.8); }
+
+.hidden {
+  display: none; }
+
+@keyframes showModal {
+  from {
+    top: -50%;
+    opacity: 0; }
+  to {
+    top: 50%;
+    opacity: 1; } }
+
+.modal-hidden {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative; }
+  .modal-hidden .modal-grid_row {
+    animation: showModal linear 1s;
+    width: 45rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .modal-hidden .modal-grid_row .modal-wel {
+      padding: .6rem 1rem;
+      display: flex;
+      background-color: #e26e70;
+      color: #fff;
+      border-top-left-radius: .6rem;
+      border-top-right-radius: .6rem;
+      align-items: center; }
+      .modal-hidden .modal-grid_row .modal-wel p {
+        flex: 1;
+        font-size: 1.8rem; }
+      .modal-hidden .modal-grid_row .modal-wel span {
+        font-size: 3rem;
+        cursor: pointer;
+        font-weight: 1000; }
+    .modal-hidden .modal-grid_row .modal-inner {
+      background-color: #fff;
+      padding: 1.6rem 1rem;
+      border-bottom-left-radius: .6rem;
+      border-bottom-right-radius: .6rem; }
+      .modal-hidden .modal-grid_row .modal-inner h2 {
+        color: #e26e70;
+        font-size: 2.4rem; }
+      .modal-hidden .modal-grid_row .modal-inner p {
+        font-size: 1.4rem;
+        line-height: 3; }
+      .modal-hidden .modal-grid_row .modal-inner .close {
+        padding: 1rem 1.6rem;
+        background-color: #e26e70;
+        color: #fff;
+        border-radius: .6rem;
+        cursor: pointer;
+        margin-top: 2rem;
+        margin-left: 36.8rem; }
